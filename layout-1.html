@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:0 30px;
+        }
+        .col {
+            text-align: justify;
+
+            background-color: pink;
+            /* height: 300px; */
+
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 15px;
+        }
+        .col a {
+            margin-top: auto;
+            margin-left: auto;
+        }
+        .banner {
+            width: 1200px;
+            height: 100px;
+            background-color: #fa0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner"></div>
+    <div class="container">
+        <div class="col">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatem laboriosam officiis saepe? Voluptas, excepturi voluptatibus architecto exercitationem possimus dolores?
+            </p>
+            <a href="#">link</a>
+        </div>
+        <div class="col">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatem laboriosam officiis saepe? Voluptas, excepturi voluptatibus architecto exercitationem possimus dolores?
+            </p>
+            <a href="#">link</a>
+        </div>
+        <div class="col">
+            <h2>title</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatem laboriosam officiis saepe? Voluptas, excepturi voluptatibus architecto exercitationem possimus dolores?
+            </p>
+            <a href="#">link</a>
+        </div>
+    </div>
+</body>
+</html>

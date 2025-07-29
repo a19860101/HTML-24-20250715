@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+
+            display: flex;
+            gap: 15px;
+            align-items: stretch;
+            /* start, center, end, stretch */
+        }
+        .container .col {
+            width: 50%;
+            background-color: #fa0;
+        }
+        img {
+            width: 100%;
+        }
+        nav {
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 60px;
+            background-color: #ccc;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* 
+                start, center, end
+                space-between , space-around, space-evenly
+            */
+
+        }
+        .nav-menu {
+            display: flex;
+            gap: 15px
+        }
+        .container-v {
+            width: 1200px;
+            height: 600px;
+            background-color: #ccc;
+            margin-left: auto;
+            margin-right: auto;
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+        .container-v .col {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">logo</a>
+        <div class="nav-menu">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="col">
+            <img src="images/street.jpg" alt="">
+        </div>
+        <div class="col">
+            <h3>title</h3>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea facilis odio eum fuga cupiditate voluptate sint omnis, porro perspiciatis consequatur iure quae quisquam nobis illo dolor impedit assumenda, architecto nemo.
+            </p>
+        </div>
+    </div>
+    <div class="container-v">
+        <div class="col">
+            <h2>rtitle</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed ex numquam sequi, quia inventore explicabo delectus earum aliquam voluptatem.</p>
+        </div>
+        <div class="col">
+            <h2>rtitle</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed ex numquam sequi, quia inventore explicabo delectus earum aliquam voluptatem.</p>
+        </div>
+        <div class="col">
+            <h2>rtitle</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed ex numquam sequi, quia inventore explicabo delectus earum aliquam voluptatem.</p>
+        </div>
+    </div>
+</body>
+</html>
