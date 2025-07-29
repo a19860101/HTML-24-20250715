@@ -89,9 +89,34 @@
         }
         header {
             width: 100%;
-            max-height: 600px;
-        }
 
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        header img {
+            grid-column: 1/ -1;
+            grid-row: 1 / -1;
+        }
+        .header-content {
+            grid-column : 1 / -1;
+            grid-row : 1 / -1;
+
+            max-width: 600px;
+            width: 90%;
+            /* min-width:450px; */
+            height: fit-content;
+            text-align: center;
+            margin: auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+        }
+        h1 {
+            font-size: 60px;
+        }
+        .header-content p {
+            font-size: 20px;
+        }
         #about {
             padding-top: 100px;
             padding-bottom: 100px;
@@ -110,6 +135,13 @@
     </nav>
     <header class="ratio-169">
         <img src="images/street.jpg" alt="" class="cover ratio-169">
+        <div class="header-content">
+            <h1>HELLO TAXI</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo tempore odit eligendi blanditiis omnis inventore.
+            </p>
+            <a href="#">Link</a>
+        </div>
     </header>
     <div class="container" id ="about">
         <div class="col">
