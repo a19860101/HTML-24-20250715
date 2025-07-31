@@ -188,8 +188,6 @@
             width: 100%;
             border-radius: 8px;
             border:1px solid #444;
-        }
-        input:not([type='submit']){
             padding: 10px;
         }
         textarea {
@@ -199,8 +197,23 @@
         .form-group {
             margin-bottom: 15px;
         }
+        #contact {
+            background-color: #eee;
+        }
         #contact .container {
             width: 600px;
+        }
+         #contact input {
+            outline:0;
+         }
+        #contact textarea{
+            outline:0;
+        } 
+        #contact input:focus {
+            border:1px solid #fa0
+        }
+        #contact textarea:focus {
+            border:1px solid #fa0
         }
     </style>
 </head>
