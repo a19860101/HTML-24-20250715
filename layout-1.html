@@ -28,6 +28,9 @@
         .grid-cols-3 {
             grid-template-columns: repeat(3,1fr);
         }
+        .grid-cols-6 {
+            grid-template-columns: repeat(6, 1fr);
+        }
         .gap-30 {
             gap: 30px;
         }
@@ -62,6 +65,9 @@
         }
         .ratio-11 {
             aspect-ratio: 1/1;
+        }
+        .ratio-43{
+            aspect-ratio: 4/3;
         }
         .ratio-169 {
             aspect-ratio: 16/9;
@@ -148,6 +154,7 @@
             border-radius: 8px;
             /* transition: .3s; */
             transition: 300ms;
+            border: 0;
         }
         .btn:hover {
             background-color: #3e8afd;
@@ -167,6 +174,33 @@
         }
         .radius {
             border-radius: 15px;
+        }
+        #contact {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        label {
+            display: block;
+            width: 100%;
+        }
+        input:not([type='submit']), textarea{
+            display: block;
+            width: 100%;
+            border-radius: 8px;
+            border:1px solid #444;
+        }
+        input:not([type='submit']){
+            padding: 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        #contact .container {
+            width: 600px;
         }
     </style>
 </head>
@@ -276,6 +310,67 @@
             <div class="col">
                 <img src="images/street.jpg" alt="" class="radius cover ratio-11">
             </div>
+        </div>
+    </section>
+    <section id="folio" class="grid grid-cols-6">
+        <div>
+            <img src="https://picsum.photos/400?random=1" alt="" class="cover ratio-43">
+        </div>
+        <div>
+            <img src="https://picsum.photos/400?random=2" alt="" class="cover ratio-43">
+        </div>
+        <div>
+            <img src="https://picsum.photos/400?random=3" alt="" class="cover ratio-43">
+        </div>
+        <div>
+            <img src="https://picsum.photos/400?random=4" alt="" class="cover ratio-43">
+        </div>
+        <div>
+            <img src="https://picsum.photos/400?random=5" alt="" class="cover ratio-43">
+        </div>
+        <div>
+            <img src="https://picsum.photos/400?random=6" alt="" class="cover ratio-43">
+        </div>
+        <div>
+            <img src="https://picsum.photos/420?random=7" alt="" class="cover ratio-43">
+        </div>
+        <div>
+            <img src="https://picsum.photos/420?random=8" alt="" class="cover ratio-43">
+        </div>
+        <div>
+            <img src="https://picsum.photos/420?random=9" alt="" class="cover ratio-43">
+        </div>
+        <div>
+            <img src="https://picsum.photos/420?random=10" alt="" class="cover ratio-43">
+        </div>
+        <div>
+            <img src="https://picsum.photos/420?random=11" alt="" class="cover ratio-43">
+        </div>
+        <div>
+            <img src="https://picsum.photos/420?random=12" alt="" class="cover ratio-43">
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <form action="">
+                <div class="form-group">
+                    <label for="">姓名</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label for="">電話</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label for="">內容</label>
+                    <textarea name="" id=""></textarea>
+                </div>
+                <input type="submit" value="送出" class="btn">
+            </form>
         </div>
     </section>
 </body>
