@@ -11,6 +11,9 @@
             padding: 0;
             box-sizing: border-box;
         }
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: 'Nunito', 'Huninn';
         }
@@ -85,14 +88,18 @@
 
         nav {
             width: 100%;
-            background-color: #133653;
+            background-color: #1336538c;
             padding-top: 25px;
             padding-bottom: 25px;
+            backdrop-filter: blur(8px);
 
             display: flex;
             justify-content: space-between;
             padding-left: 15px;
             padding-right: 15px;
+
+            position: fixed;
+            z-index: 9999;
         }
         .nav-menu {
             display: flex;
@@ -223,6 +230,21 @@
             padding-bottom: 20px;
             text-align: center;
         }
+        .gotop {
+            display: block;
+            width: 60px;
+            height: 60px;
+            background-color: #1336538c;
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            display: grid;
+            place-content: center;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 900;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
@@ -230,9 +252,10 @@
         <a href="#" class="nav-logo">Logo</a>
         <div class="nav-menu">
             <a href="#" class="nav-link">Home</a>
-            <a href="#" class="nav-link">About</a>
-            <a href="#" class="nav-link">Portfolio</a>
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#blog" class="nav-link">Blog</a>
+            <a href="#folio" class="nav-link">Portfolio</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </div>
     </nav>
     <header class="ratio-169">
@@ -394,6 +417,7 @@
             </form>
         </div>
     </section>
+    <a href="#" class="gotop">TOP</a>
     <footer>
         Copyrights&copy;All Rights Reserved.
     </footer>
